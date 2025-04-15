@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spidey Webpage 🕷️</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Neue', cursive;
+      background: linear-gradient(to bottom, #ff0000, #000066);
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px dashed #ffcc00;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 20px 0 10px;
+      color: #ffcc00;
+      text-shadow: 2px 2px #000;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      gap: 15px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      background-color: #000066;
+      color: #ffffff;
+      padding: 14px 25px;
+      border-radius: 12px;
+      border: 3px solid #ffcc00;
+      font-size: 18px;
+      width: 220px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    .web-emoji {
+      font-size: 24px;
+      margin-left: 5px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 16px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="spidey-kid.jpg" alt="Spidey Profile" class="profile-photo" />
+
+    <h1>Hey! I'm Spidey Jr. 🕷️</h1>
+    <p>I'm 10 and I build cool things just like Spiderman builds webs!</p>
+    <p>From fun games to awesome coding projects — welcome to my world!</p>
+
+    <div class="menu">
+      <a href="projects.html">🛠️ My Projects</a>
+      <a href="games.html">🎮 Games I Like</a>
+      <a href="hobbies.html">🎨 My Hobbies</a>
+      <a href="contact.html">📬 Contact Me</a>
+    </div>
+
+    <div class="footer">
+      Made with 💖 and web power!
+    </div>
+  </div>
+
+</body>
+</html>
