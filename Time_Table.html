@@ -26,12 +26,13 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
             background-color: #ffffff;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; /* Enables horizontal scrolling if needed */
         }
 
         /* Table Styling */
@@ -72,79 +73,88 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 600px) {
-            th, td {
-                padding: 10px;
-                font-size: 14px;
-            }
             h1, h2 {
                 font-size: 1.8em;
             }
+            th, td {
+                padding: 10px;
+                font-size: 12px;
+            }
+            table {
+                font-size: 14px; /* Smaller font on small screens */
+            }
+        }
+
+        /* Optional: Allow the table to scroll horizontally */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
     </style>
 </head>
 <body>
 
-    <h1>School Timetable</h1>
-    <h2>5th B Satpuda</h2>
+    <h1>Kids Time Table</h1>
+    <h2>Weekly Schedule</h2>
 
     <div class="container">
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-            <tr>
-                <td>9:10 am - 9:20 am</td>
-                <td>Prayer</td>
-                <td>Prayer</td>
-                <td>Prayer</td>
-                <td>Prayer</td>
-                <td>Prayer</td>
-            </tr>
-            <tr>
-                <td>9:20 am - 10:00 am</td>
-                <td>English</td>
-                <td>1/3-cod, 2/4-comp</td>
-                <td>M.P.T</td>
-                <td>Maths</td>
-                <td>Marathi</td>
-            </tr>
-            <tr>
-                <td>10:00 am - 10:50 am</td>
-                <td>Hindi</td>
-                <td>Science</td>
-                <td>1/3-P.E, 2/4-A/C</td>
-                <td>Maths</td>
-                <td>Hindi</td>
-            </tr>
-            <tr>
-                <td>10:50 am - 11:10 am</td>
-                <td colspan="5">Break</td>
-            </tr>
-            <tr>
-                <td>11:10 am - 12:00 pm</td>
-                <td>S.S.T</td>
-                <td>Maths</td>
-                <td>English</td>
-                <td>Hindi</td>
-                <td>Science</td>
-            </tr>
-            <tr>
-                <td>12:00 pm - 12:50 pm</td>
-                <td>Marathi</td>
-                <td>S.S.T</td>
-                <td>Science</td>
-                <td>English</td>
-                <td>S.S.T</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>9:10 am - 9:20 am</td>
+                    <td>Prayer</td>
+                    <td>Prayer</td>
+                    <td>Prayer</td>
+                    <td>Prayer</td>
+                    <td>Prayer</td>
+                </tr>
+                <tr>
+                    <td>9:20 am - 10:00 am</td>
+                    <td>English</td>
+                    <td>1/3-cod, 2/4-comp</td>
+                    <td>M.P.T</td>
+                    <td>Maths</td>
+                    <td>Marathi</td>
+                </tr>
+                <tr>
+                    <td>10:00 am - 10:50 am</td>
+                    <td>Hindi</td>
+                    <td>Science</td>
+                    <td>1/3-P.E, 2/4-A/C</td>
+                    <td>Maths</td>
+                    <td>Hindi</td>
+                </tr>
+                <tr>
+                    <td>10:50 am - 11:10 am</td>
+                    <td colspan="5">Break</td>
+                </tr>
+                <tr>
+                    <td>11:10 am - 12:00 pm</td>
+                    <td>S.S.T</td>
+                    <td>Maths</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>12:00 pm - 12:50 pm</td>
+                    <td>Marathi</td>
+                    <td>S.S.T</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>S.S.T</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 </body>
 </html>
-
-
