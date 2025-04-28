@@ -3,57 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Timetable</title>
+    <title>Kids Time Table</title>
     <style>
+        /* General Page Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e0f7fa;
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light Blue Background */
+            color: #03396c;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+            background-color: #4fc3f7; /* Light Blue header */
             padding: 20px;
             margin: 0;
+            font-size: 2.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            text-align: center;
-            color: #00796b;
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /* Table Styling */
         table {
             width: 100%;
-            border-collapse: collapse;
             margin-top: 20px;
+            border-collapse: collapse;
             background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         th, td {
             padding: 12px;
             text-align: center;
-            border: 1px solid #00796b;
+            border: 1px solid #4fc3f7; /* Blue Border */
         }
+
         th {
-            background-color: #00796b;
-            color: #ffffff;
+            background-color: #0288d1; /* Darker Blue */
+            color: white;
+            font-size: 1.2em;
         }
+
         td {
-            background-color: #e0f2f1;
-            color: #00796b;
+            background-color: #b3e5fc; /* Light Blue */
+            font-size: 1.1em;
         }
-        tr:nth-child(even) td {
-            background-color: #b2dfdb;
+
+        tr:nth-child(even) {
+            background-color: #b3e5fc; /* Alternating Row Colors */
         }
-        tr:hover td {
-            background-color: #80cbc4;
+
+        tr:nth-child(odd) {
+            background-color: #81d4fa;
         }
-        caption {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #00796b;
-            margin-bottom: 10px;
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+            h1, h2 {
+                font-size: 1.8em;
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>School Timetable</h1>
-    <table>
-        <caption>5th B Satpuda</caption>
-        <thead>
+    <h2>5th B Satpuda</h2>
+
+    <div class="container">
+        <table>
             <tr>
                 <th>Time</th>
                 <th>Monday</th>
@@ -62,8 +97,6 @@
                 <th>Thursday</th>
                 <th>Friday</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td>9:10 am - 9:20 am</td>
                 <td>Prayer</td>
@@ -90,7 +123,7 @@
             </tr>
             <tr>
                 <td>10:50 am - 11:10 am</td>
-                <td colspan="5"><strong>Break</strong></td>
+                <td colspan="5">Break</td>
             </tr>
             <tr>
                 <td>11:10 am - 12:00 pm</td>
@@ -108,8 +141,10 @@
                 <td>English</td>
                 <td>S.S.T</td>
             </tr>
-        </tbody>
-    </table>
+        </table>
+    </div>
+
 </body>
 </html>
+
 
